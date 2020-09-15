@@ -1,0 +1,14 @@
+<header>
+    <div class="header-content flex space-between align-center container">
+    <div class="logo flex align-center">
+        <a [routerLink]="['/']" routerLinkActive="router-link-active" (click)="activateHome()" [class.active]="homeIsActive">Mr BitC<span><i class="fab fa-bitcoin"></i></span>in</a>
+    </div>
+
+    <nav class="flex align-center">
+        <a [routerLink]="['/']" routerLinkActive="router-link-active" (click)="activateHome()" [class.active]="homeIsActive"><i class="fas fa-home"></i></a>
+        <a [routerLink]="['/contact']" routerLinkActive="router-link-active" (click)="activateContacts()" [class.active]="contactsIsActive"><i class="fas fa-users"></i></a>
+        <a [routerLink]="['/statistic']" routerLinkActive="router-link-active" (click)="activateStatistic()" [class.active]="statisticIsActive"><i class="fas fa-chart-line"></i></a>
+    </nav>
+</div>
+</header>
+

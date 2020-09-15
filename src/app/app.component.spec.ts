@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'mister-bitcoin-angular'`, () => {
+  it(`should have as title 'mister-bitcoin'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('mister-bitcoin-angular');
+    expect(app.title).toEqual('mister-bitcoin');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('mister-bitcoin-angular app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('mister-bitcoin app is running!');
   });
 });

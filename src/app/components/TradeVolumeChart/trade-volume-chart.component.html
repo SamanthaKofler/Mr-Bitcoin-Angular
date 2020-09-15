@@ -1,0 +1,8 @@
+<div *ngIf="lineChartData && lineChartLabels; else elLoader" style="display: block" class="chart container">
+  <canvas baseChart [datasets]="lineChartData" [labels]="lineChartLabels" [options]="lineChartOptions"
+    [legend]="lineChartLegend" [colors]="lineChartColors" [chartType]="lineChartType">
+  </canvas>
+</div>
+<ng-template #elLoader >
+  <content-loader></content-loader>
+</ng-template>
